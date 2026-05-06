@@ -6,8 +6,8 @@ export const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-4 flex items-center gap-4">
-            <div className="h-14 w-14">
-              <Logo className="h-full" />
+            <div className="h-16 w-16 bg-primary-foreground rounded-full flex items-center justify-center p-1.5 shrink-0">
+              <Logo markOnly className="h-full" />
             </div>
             <div>
               <div className="font-display text-lg font-semibold">Soliman Ponteggi Elseidy</div>
