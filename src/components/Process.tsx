@@ -1,4 +1,5 @@
 import workerImg from "@/assets/worker.jpg";
+import { useReveal } from "@/hooks/use-reveal";
 
 const steps = [
   { n: "01", title: "Sopralluogo", desc: "Rilievo dell'edificio, analisi dei vincoli e definizione del perimetro di lavoro." },
@@ -9,17 +10,26 @@ const steps = [
 ];
 
 export const Process = () => {
+  const header = useReveal<HTMLDivElement>();
+  const list = useReveal<HTMLOListElement>({ threshold: 0.1 });
+  const image = useReveal<HTMLDivElement>();
+
   return (
-    <section id="processo" className="py-24 md:py-36 bg-primary text-primary-foreground relative overflow-hidden">
+    <section id="processo" className="py-20 md:py-36 bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 blueprint-grid opacity-20" />
 
       <div className="container relative">
-        <div className="grid md:grid-cols-12 gap-8 mb-16 md:mb-20 items-end">
-          <div className="md:col-span-2 font-mono text-xs uppercase tracking-[0.3em] text-primary-foreground/60">
+        <div
+          ref={header.ref}
+          className={`grid md:grid-cols-12 gap-6 md:gap-8 mb-12 md:mb-20 items-end reveal-on-scroll ${
+            header.visible ? "is-visible" : ""
+          }`}
+        >
+          <div className="md:col-span-2 font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-primary-foreground/60">
             (03) Processo
           </div>
           <div className="md:col-span-7">
-            <h2 className="font-display text-balance text-5xl md:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
+            <h2 className="font-display text-balance text-4xl sm:text-5xl md:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
               Cinque passi.
               <br />
               <span className="italic font-light text-primary-foreground/50">Zero</span> sorprese.
@@ -29,7 +39,10 @@ export const Process = () => {
 
         <div className="grid md:grid-cols-12 gap-8 lg:gap-12">
           {/* Image column */}
-          <div className="md:col-span-5">
+          <div
+            ref={image.ref}
+            className={`md:col-span-5 reveal-on-scroll ${image.visible ? "is-visible" : ""}`}
+          >
             <div className="aspect-[4/5] overflow-hidden relative">
               <img
                 src={workerImg}
@@ -52,7 +65,12 @@ export const Process = () => {
 
           {/* Steps column */}
           <div className="md:col-span-7">
-            <ol className="divide-y divide-primary-foreground/15 border-y border-primary-foreground/15">
+            <ol
+              ref={list.ref}
+              className={`divide-y divide-primary-foreground/15 border-y border-primary-foreground/15 reveal-stagger ${
+                list.visible ? "is-visible" : ""
+              }`}
+            >
               {steps.map((step, i) => (
                 <li
                   key={step.n}
