@@ -40,16 +40,23 @@ export const Projects = () => {
             <a
               key={p.ref}
               href="#contatti"
-              className="grid grid-cols-2 md:grid-cols-[100px_2fr_1fr_1fr_80px_40px] gap-4 py-6 md:py-8 border-b border-border hover:bg-background transition-colors group items-center"
+              className="grid grid-cols-[auto_1fr_auto] md:grid-cols-[100px_2fr_1fr_1fr_80px_40px] gap-x-4 gap-y-1 py-5 md:py-8 border-b border-border hover:bg-background transition-colors group items-center"
             >
-              <span className="font-mono text-xs text-accent col-span-2 md:col-span-1">{p.ref}</span>
-              <span className="font-display text-xl md:text-2xl font-medium tracking-tight col-span-2 md:col-span-1 group-hover:italic transition-all">
+              <span className="font-mono text-[10px] md:text-xs text-accent">{p.ref}</span>
+              <span className="font-display text-lg md:text-2xl font-medium tracking-tight group-hover:italic transition-all truncate">
                 {p.name}
               </span>
-              <span className="text-sm text-muted-foreground">{p.type}</span>
-              <span className="font-mono text-sm">{p.year}</span>
-              <span className="font-mono text-sm">{p.height}</span>
-              <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+              <ArrowUpRight className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all justify-self-end" />
+              
+              <div className="col-start-2 flex flex-wrap gap-x-4 gap-y-1 md:hidden">
+                <span className="text-[10px] text-muted-foreground">{p.type}</span>
+                <span className="font-mono text-[10px] text-muted-foreground/60">{p.year}</span>
+                <span className="font-mono text-[10px] text-muted-foreground/60">H: {p.height}</span>
+              </div>
+
+              <span className="hidden md:inline text-sm text-muted-foreground">{p.type}</span>
+              <span className="hidden md:inline font-mono text-sm">{p.year}</span>
+              <span className="hidden md:inline font-mono text-sm">{p.height}</span>
             </a>
           ))}
         </div>

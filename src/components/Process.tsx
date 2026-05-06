@@ -58,12 +58,12 @@ export const Process = () => {
                   key={step.n}
                   className="grid grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-baseline py-6 md:py-8 group cursor-default"
                 >
-                  <span className="font-mono text-sm text-accent">{step.n}</span>
+                  <span className="font-mono text-[10px] md:text-sm text-accent">{step.n}</span>
                   <div>
-                    <h3 className="font-display text-2xl md:text-4xl font-medium tracking-tight group-hover:italic transition-all">
+                    <h3 className="font-display text-xl md:text-4xl font-medium tracking-tight group-hover:italic transition-all">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-sm md:text-base text-primary-foreground/65 max-w-xl leading-relaxed">
+                    <p className="mt-1 md:mt-2 text-xs md:text-base text-primary-foreground/65 max-w-xl leading-relaxed">
                       {step.desc}
                     </p>
                   </div>

@@ -104,15 +104,15 @@ export const Services = () => {
         </div>
 
         {/* Service cards */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {services.map((s) => (
             <article
               key={s.n}
-              className="group relative bg-card border border-border overflow-hidden hover:border-primary transition-all duration-500"
+              className="group relative bg-card border border-border overflow-hidden hover:border-primary transition-all duration-500 flex flex-col sm:flex-row md:flex-col"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               {/* Image */}
-              <div className="aspect-[4/5] overflow-hidden bg-muted relative">
+              <div className="aspect-[4/5] sm:aspect-square md:aspect-[4/5] sm:w-1/3 md:w-full overflow-hidden bg-muted relative shrink-0">
                 <img
                   src={s.image}
                   alt={s.title}
@@ -122,20 +122,20 @@ export const Services = () => {
                 <div className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground bg-primary/80 backdrop-blur-sm px-2 py-1">
                   {s.n} / 03
                 </div>
-                <div className="absolute top-4 right-4 w-10 h-10 bg-background/90 backdrop-blur-sm flex items-center justify-center text-primary">
-                  <s.icon className="h-5 w-5" strokeWidth={1.5} />
+                <div className="absolute top-4 right-4 w-8 h-8 md:w-10 md:h-10 bg-background/90 backdrop-blur-sm flex items-center justify-center text-primary">
+                  <s.icon className="h-4 w-4 md:h-5 md:w-5" strokeWidth={1.5} />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 md:p-8 space-y-5">
+              <div className="p-6 md:p-8 space-y-4 md:space-y-5 flex-grow">
                 <div>
-                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">
+                  <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1 md:mb-2">
                     {s.sub}
                   </div>
-                  <h3 className="font-display text-3xl font-medium tracking-tight">{s.title}</h3>
+                  <h3 className="font-display text-2xl md:text-3xl font-medium tracking-tight">{s.title}</h3>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed line-clamp-3 md:line-clamp-none">{s.desc}</p>
 
                 <div className="flex flex-wrap gap-1.5 pt-2">
                   {s.tags.map((t) => (

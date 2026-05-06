@@ -107,7 +107,7 @@ export const Transformation = () => {
       id="trasformazione"
       ref={sectionRef}
       className="relative bg-primary"
-      style={{ height: "360vh" }}
+      style={{ height: "300vh" }}
       aria-label="Da palazzo storico degradato a facciata restaurata"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden">
@@ -162,8 +162,8 @@ export const Transformation = () => {
             }}
           >
             <div className="relative -translate-x-1/2 -translate-y-1/2">
-              <div className="w-32 h-32 rounded-full bg-accent blur-3xl opacity-70" />
-              <div className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-accent shadow-[0_0_80px_30px_hsl(var(--accent)/0.6)]" />
+              <div className="w-24 md:w-32 h-24 md:h-32 rounded-full bg-accent blur-3xl opacity-70" />
+              <div className="absolute inset-0 m-auto w-12 md:w-16 h-12 md:h-16 rounded-full bg-accent shadow-[0_0_60px_20px_hsl(var(--accent)/0.6)]" />
             </div>
           </div>
 
@@ -206,37 +206,15 @@ export const Transformation = () => {
         </div>
 
         {/* === Construction tape — top === */}
-        <div className="absolute top-0 inset-x-0 h-7 tape tape-anim z-20" />
+        <div className="absolute top-0 inset-x-0 h-6 md:h-7 tape tape-anim z-20" />
         {/* === Tricolore stripe — under tape === */}
-        <div className="absolute top-7 inset-x-0 h-1 tricolore z-20 opacity-90" />
+        <div className="absolute top-6 md:top-7 inset-x-0 h-1 tricolore z-20 opacity-90" />
 
         {/* === Construction tape — bottom (reverse) === */}
         <div
-          className="absolute bottom-0 inset-x-0 h-7 tape z-20"
+          className="absolute bottom-0 inset-x-0 h-6 md:h-7 tape z-20"
           style={{ animation: "tape-scroll 1.2s linear infinite reverse" }}
         />
-
-        {/* === SVG corner registration marks (architectural) === */}
-        <svg
-          className="absolute top-12 left-4 w-10 h-10 text-primary-foreground/60 z-10"
-          viewBox="0 0 40 40"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-        >
-          <circle cx="20" cy="20" r="14" />
-          <line x1="20" y1="2" x2="20" y2="38" />
-          <line x1="2" y1="20" x2="38" y2="20" />
-        </svg>
-        <svg
-          className="absolute top-12 right-4 w-10 h-10 text-primary-foreground/60 z-10 spin-slow"
-          viewBox="0 0 40 40"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-        >
-          <polygon points="20,4 36,30 4,30" />
-        </svg>
 
         {/* === Side stage index === */}
         <div className="absolute left-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-5 font-mono text-[10px] uppercase tracking-[0.3em] text-primary-foreground/60 z-10">
@@ -260,35 +238,14 @@ export const Transformation = () => {
           ))}
         </div>
 
-        {/* === Vertical progress rail === */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-3 z-10">
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary-foreground/70 tabular-nums">
-            {String(Math.round(progress * 100)).padStart(2, "0")}%
-          </span>
-          <div className="relative w-px h-48 bg-primary-foreground/20">
-            <div
-              className="absolute top-0 left-0 w-px bg-accent"
-              style={{ height: `${progress * 100}%` }}
-            />
-            {/* moving knob */}
-            <div
-              className="absolute -left-1 w-2 h-2 rounded-full bg-accent shadow-[0_0_12px_hsl(var(--accent))]"
-              style={{ top: `calc(${progress * 100}% - 4px)` }}
-            />
-          </div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary-foreground/70 [writing-mode:vertical-rl] rotate-180">
-            Scorri
-          </span>
-        </div>
-
         {/* === Top eyebrow with running phrases === */}
-        <div className="absolute top-14 inset-x-0 z-10 overflow-hidden ticker-wrap">
+        <div className="absolute top-10 md:top-14 inset-x-0 z-10 overflow-hidden ticker-wrap">
           <div className="flex marquee whitespace-nowrap py-2">
             {[...ITALIAN_PHRASES, ...ITALIAN_PHRASES, ...ITALIAN_PHRASES].map(
               (w, i) => (
                 <span
                   key={i}
-                  className="font-display italic text-primary-foreground/40 text-2xl md:text-3xl px-6"
+                  className="font-display italic text-primary-foreground/40 text-xl md:text-3xl px-6"
                 >
                   {w} <span className="text-accent not-italic">✦</span>
                 </span>
@@ -300,15 +257,15 @@ export const Transformation = () => {
         {/* === Big "Prima / Durante / Dopo" stamp === */}
         <div
           key={`stamp-${stageIndex}`}
-          className="absolute top-1/4 right-8 md:right-20 z-10 pointer-events-none"
+          className="absolute top-[20%] right-4 md:right-20 z-10 pointer-events-none"
           style={{ animation: "stamp-in 0.8s cubic-bezier(.22,1,.36,1) both" }}
         >
           <div className="relative">
-            <div className="border-4 border-accent/90 px-6 py-3 -rotate-12 backdrop-blur-sm bg-primary/20">
-              <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent/80">
+            <div className="border-2 md:border-4 border-accent/90 px-4 md:px-6 py-2 md:py-3 -rotate-12 backdrop-blur-sm bg-primary/20">
+              <div className="font-mono text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-accent/80">
                 {stage.italian}
               </div>
-              <div className="font-display text-xl md:text-2xl font-bold text-primary-foreground tracking-tight">
+              <div className="font-display text-lg md:text-2xl font-bold text-primary-foreground tracking-tight">
                 {stage.stamp}
               </div>
             </div>
@@ -318,15 +275,14 @@ export const Transformation = () => {
         {/* === Bottom-anchored content === */}
         <div className="absolute inset-0 flex items-end pb-12 md:pb-16">
           <div className="container text-primary-foreground w-full">
-            <div className="flex items-center gap-3 mb-5 font-mono text-xs uppercase tracking-[0.25em] text-primary-foreground/80">
-              <span className="w-8 h-px bg-accent" />
+            <div className="flex items-center gap-3 mb-4 md:mb-5 font-mono text-[10px] md:text-xs uppercase tracking-[0.25em] text-primary-foreground/80">
+              <span className="w-6 md:w-8 h-px bg-accent" />
               <span>{stage.label}</span>
-              <span className="w-2 h-2 rounded-full bg-accent pulse-dot" />
-              <span className="text-primary-foreground/50">Torino · IT</span>
+              <span className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-accent pulse-dot" />
             </div>
 
             {/* Sliding stage titles */}
-            <div className="relative max-w-4xl min-h-[clamp(7rem,18vw,16rem)]">
+            <div className="relative max-w-4xl min-h-[5rem] md:min-h-[clamp(7rem,18vw,16rem)]">
               {STAGES.map((s, i) => {
                 const state =
                   i === stageIndex ? "in" : i < stageIndex ? "out-left" : "out-right";
@@ -334,7 +290,7 @@ export const Transformation = () => {
                   <h2
                     key={i}
                     aria-hidden={i !== stageIndex}
-                    className={`absolute inset-0 font-display font-medium text-balance text-[clamp(2.25rem,7vw,6.5rem)] leading-[0.92] tracking-[-0.03em] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)] ${
+                    className={`absolute inset-0 font-display font-medium text-balance text-[clamp(1.75rem,7vw,6.5rem)] leading-[0.92] tracking-[-0.03em] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)] ${
                       state === "in"
                         ? "opacity-100 translate-x-0 blur-0"
                         : state === "out-left"
@@ -348,14 +304,14 @@ export const Transformation = () => {
               })}
             </div>
 
-            <div className="mt-6 grid md:grid-cols-2 gap-8 items-end">
+            <div className="mt-4 md:mt-6 grid md:grid-cols-2 gap-8 items-end">
               {/* Body copy */}
               <div className="relative max-w-xl min-h-[5.5rem]">
                 {STAGES.map((s, i) => (
                   <p
                     key={i}
                     aria-hidden={i !== stageIndex}
-                    className={`absolute inset-0 text-base md:text-lg text-primary-foreground/90 leading-relaxed transition-all duration-700 ${
+                    className={`absolute inset-0 text-sm md:text-lg text-primary-foreground/90 leading-relaxed transition-all duration-700 ${
                       i === stageIndex
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-4 pointer-events-none"
