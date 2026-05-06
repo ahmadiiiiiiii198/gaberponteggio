@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <path id="topArc" d="M 60,200 A 140,140 0 0 1 340,200" />
+    <path id="botArc" d="M 70,200 A 130,130 0 0 0 330,200" />
+  </defs>
+  <circle cx="200" cy="200" r="190" stroke="currentColor" stroke-width="6" fill="none"/>
+  <circle cx="200" cy="200" r="172" stroke="currentColor" stroke-width="2.5" fill="none"/>
+  <text font-family="'Inter', 'Helvetica', sans-serif" font-weight="800" font-size="32" letter-spacing="2.5" fill="currentColor">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SOLIMAN PONTEGGI</textPath>
+  </text>
+  <text font-family="'Inter', 'Helvetica', sans-serif" font-weight="800" font-size="32" letter-spacing="3" fill="currentColor">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">ELSEIDY</textPath>
+  </text>
+  <!-- Woven S monogram in center -->
+  <g stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none">
+    <!-- Vertical bars (scaffolding columns) -->
+    <line x1="160" y1="130" x2="160" y2="270"/>
+    <line x1="240" y1="130" x2="240" y2="270"/>
+    <!-- Horizontal cross beams -->
+    <line x1="135" y1="170" x2="265" y2="170"/>
+    <line x1="135" y1="230" x2="265" y2="230"/>
+    <!-- Diagonal bracing -->
+    <line x1="160" y1="170" x2="240" y2="230" stroke-width="5"/>
+    <line x1="240" y1="170" x2="160" y2="230" stroke-width="5"/>
+  </g>
+  <!-- Rope-style S overlay -->
+  <g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round">
+    <path d="M 235 145 Q 165 145 165 185 Q 165 200 200 200 Q 235 200 235 215 Q 235 255 165 255" />
+  </g>
+  <g fill="none" stroke="hsl(var(--background))" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+    <path d="M 235 145 Q 165 145 165 185 Q 165 200 200 200 Q 235 200 235 215 Q 235 255 165 255" />
+  </g>
+</svg>
