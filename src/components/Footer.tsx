@@ -10,9 +10,9 @@ export const Footer = () => {
               <Logo markOnly className="h-full" />
             </div>
             <div>
-              <div className="font-display text-lg font-semibold">Soliman Ponteggi Elseidy</div>
+              <div className="font-display text-lg font-semibold">Sarda Ponteggi</div>
               <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary-foreground/60">
-                Ponteggi · Ascensori · Coperture
+                Ponteggi · Ascensori · Coperture · Materiali Edili
               </div>
             </div>
           </div>
@@ -21,17 +21,17 @@ export const Footer = () => {
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-3">Sede</div>
               <div className="leading-relaxed">
-                Via Coppino, 39
+                Località S'Iscalone
                 <br />
-                10147 Torino (TO)
+                07049 Usini (SS)
               </div>
             </div>
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-3">Contatti</div>
               <div className="leading-relaxed">
-                <a href="tel:+393476852324" className="block hover:text-accent transition-colors">347.685.23.24</a>
-                <a href="mailto:info.solimanponteggi@gmail.com" className="block hover:text-accent transition-colors break-all">
-                  info.solimanponteggi@gmail.com
+                <a href="tel:+393341922557" className="block hover:text-accent transition-colors">334 192 2557</a>
+                <a href="mailto:info@sardaponteggi.it" className="block hover:text-accent transition-colors break-all">
+                  info@sardaponteggi.it
                 </a>
               </div>
             </div>
@@ -39,7 +39,7 @@ export const Footer = () => {
 
           <div className="md:col-span-3 text-right">
             <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60">
-              © {new Date().getFullYear()} Soliman Ponteggi
+              © {new Date().getFullYear()} Sarda Ponteggi
             </div>
             <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/40 mt-1">
               P.IVA · Tutti i diritti riservati

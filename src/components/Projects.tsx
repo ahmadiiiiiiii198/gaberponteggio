@@ -1,11 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
-  { ref: "TO·087", name: "Palazzo storico, San Salvario", year: "2024", type: "Restauro facciata", height: "28 m" },
-  { ref: "TO·091", name: "Edificio residenziale, Vanchiglia", year: "2024", type: "Cappotto termico", height: "18 m" },
-  { ref: "TO·094", name: "Capannone industriale, Mirafiori", year: "2024", type: "Copertura provvisoria", height: "12 m" },
-  { ref: "TO·098", name: "Condominio, Crocetta", year: "2025", type: "Ponteggio + ascensore", height: "32 m" },
-  { ref: "TO·102", name: "Chiesa, Centro storico", year: "2025", type: "Restauro conservativo", height: "24 m" },
+  { ref: "SS·112", name: "Complesso Residenziale, Sassari Centro", year: "2024", type: "Restauro facciata", height: "22 m" },
+  { ref: "SS·115", name: "Villa Storica, Alghero", year: "2024", type: "Ristrutturazione esterna", height: "15 m" },
+  { ref: "SS·118", name: "Capannone Industriale, Porto Torres", year: "2024", type: "Copertura provvisoria", height: "14 m" },
+  { ref: "SS·121", name: "Condominio Moderno, Olbia", year: "2025", type: "Ponteggio + ascensore", height: "28 m" },
+  { ref: "SS·124", name: "Restauro Basilica, Sassari", year: "2025", type: "Restauro conservativo", height: "26 m" },
 ];
 
 export const Projects = () => {
@@ -20,7 +20,7 @@ export const Projects = () => {
             <h2 className="font-display text-balance text-5xl md:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
               Cantieri recenti
               <br />
-              <span className="italic font-light">a Torino e provincia.</span>
+              <span className="italic font-light">in tutta la Sardegna.</span>
             </h2>
           </div>
         </div>

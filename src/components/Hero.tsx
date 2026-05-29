@@ -13,9 +13,9 @@ export const Hero = () => {
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-3 font-mono text-[10px] md:text-xs uppercase tracking-[0.25em] text-primary-foreground/70">
               <MapPin className="h-3.5 w-3.5 text-accent" />
-              <span>Via Coppino, 39 — 10147 Torino</span>
+              <span>Località S'Iscalone — 07049 Usini (SS)</span>
               <span className="w-8 h-px bg-primary-foreground/30 mx-1" />
-              <span>Est. 2014</span>
+              <span>Sardegna</span>
             </div>
 
             {/* Credentials strip (moved from the video) */}
@@ -44,9 +44,9 @@ export const Hero = () => {
             </h1>
 
             <p className="mt-6 md:mt-8 text-sm md:text-lg text-primary-foreground/80 max-w-xl leading-relaxed font-light">
-              Noleggio, montaggio e consegna di ponteggi per cantieri, ascensori da cantiere e coperture.
-              Trasportiamo carichi pesanti con mezzi propri e proteggiamo ogni struttura con
-              <span className="text-accent font-medium"> videosorveglianza e allarme antifurto.</span>
+              Noleggio, montaggio, progettazione e vendita di ponteggi per cantieri, ascensori e coperture provvisorie.
+              Fornitore di materiali edili di eccellenza per tutta la Sardegna, con sede a Usini (Sassari).
+              Garantiamo massima professionalità e sicurezza in conformità con tutte le normative vigenti.
             </p>
 
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -98,10 +98,10 @@ export const Hero = () => {
       <div className="relative border-t border-primary-foreground/15 bg-primary text-primary-foreground">
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-primary-foreground/15">
           {[
-            { k: "10+", v: "Anni di attività" },
-            { k: "350+", v: "Cantieri completati" },
-            { k: "24/7", v: "Pronto intervento" },
-            { k: "100%", v: "A norma di legge" },
+            { k: "4.8 ★", v: "Valutazione Google" },
+            { k: "4", v: "Recensioni Clienti" },
+            { k: "100%", v: "Sicurezza Certificata" },
+            { k: "Regionale", v: "Copertura Sardegna" },
           ].map((s) => (
             <div key={s.v} className="px-4 md:px-8 py-5">
               <div className="font-display text-3xl md:text-4xl font-medium tracking-tight">{s.k}</div>

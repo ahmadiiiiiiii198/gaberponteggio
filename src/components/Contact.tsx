@@ -12,11 +12,11 @@ export const Contact = () => {
             <h2 className="font-display text-balance text-5xl md:text-8xl font-medium leading-[0.92] tracking-[-0.03em]">
               Parliamone
               <br />
-              <span className="italic font-light">davanti a un caffè.</span>
+              <span className="italic font-light">senza impegno.</span>
             </h2>
             <p className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-              Sopralluogo gratuito ovunque a Torino e provincia. Risposta entro 24 ore lavorative,
-              preventivo dettagliato in 48.
+              Sopralluogo gratuito in tutta la provincia di Sassari e nel resto della Sardegna. Risposta entro 24 ore lavorative,
+              preventivo personalizzato e dettagliato.
             </p>
           </div>
         </div>
@@ -24,14 +24,14 @@ export const Contact = () => {
         <div className="grid md:grid-cols-12 gap-4 md:gap-8 mt-12 md:mt-16">
           {/* Phone card */}
           <a
-            href="tel:+393476852324"
+            href="tel:+393341922557"
             className="md:col-span-5 group relative bg-primary text-primary-foreground p-6 md:p-10 overflow-hidden hover:bg-primary-glow transition-colors"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-4 md:mb-6">
-              Cellulare · Soliman
+              Telefono · Sarda Ponteggi
             </div>
             <div className="font-display text-2xl md:text-5xl font-medium tracking-tight relative z-10">
-              347 685 23 24
+              334 192 2557
             </div>
             <div className="mt-4 md:mt-6 flex items-center gap-3 text-xs md:text-sm relative z-10">
               <Phone className="h-3.5 w-3.5" />
@@ -42,25 +42,27 @@ export const Contact = () => {
             <div className="absolute -bottom-20 -right-20 w-48 md:w-64 h-48 md:h-64 border border-primary-foreground/10 rounded-full" />
           </a>
 
-          {/* Office */}
+          {/* WhatsApp Support */}
           <a
-            href="tel:+390397442190"
+            href="https://wa.me/393341922557"
+            target="_blank"
+            rel="noopener noreferrer"
             className="md:col-span-3 bg-secondary p-6 md:p-8 hover:bg-accent hover:text-accent-foreground transition-colors group"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-accent-foreground/70 mb-4 md:mb-6">
-              Ufficio
+              WhatsApp
             </div>
             <div className="font-display text-xl md:text-3xl font-medium tracking-tight">
-              344 744 21 90
+              Invia Messaggio
             </div>
             <div className="mt-4 md:mt-6 text-[10px] md:text-xs font-mono uppercase tracking-wider opacity-70">
-              Lun—Ven · 8:00–18:00
+              Risposta immediata
             </div>
           </a>
 
           {/* Email */}
           <a
-            href="mailto:info.solimanponteggi@gmail.com"
+            href="mailto:info@sardaponteggi.it"
             className="md:col-span-4 border border-primary p-6 md:p-8 hover:bg-primary hover:text-primary-foreground transition-colors group"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-primary-foreground/70 mb-4 md:mb-6 flex items-center gap-2">
@@ -68,9 +70,7 @@ export const Contact = () => {
               Mail
             </div>
             <div className="font-display text-lg md:text-2xl font-medium tracking-tight break-all">
-              info.solimanponteggi
-              <br className="hidden sm:block" />
-              @gmail.com
+              info@sardaponteggi.it
             </div>
           </a>
 
@@ -82,11 +82,11 @@ export const Contact = () => {
                 <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">
                   Sede operativa
                 </div>
-                <div className="font-display text-lg md:text-xl">Via Coppino, 39 — 10147 Torino (TO)</div>
+                <div className="font-display text-lg md:text-xl">Località S'Iscalone, 07049 Usini (SS)</div>
               </div>
             </div>
             <a
-              href="https://maps.google.com/?q=Via+Coppino+39+Torino"
+              href="https://maps.google.com/?q=Localita+S'Iscalone+Usini+SS"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold border-b border-primary pb-1 hover:gap-3 transition-all"
