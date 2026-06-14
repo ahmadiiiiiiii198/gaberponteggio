@@ -56,9 +56,9 @@ export const Process = () => {
                   <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60">
                     On-site
                   </div>
-                  <div className="font-display text-2xl mt-1">Sarda Ponteggi</div>
+                  <div className="font-display text-2xl mt-1">Granda Ponteggi</div>
                 </div>
-                <span className="font-mono text-xs">→ SS·001</span>
+                <span className="font-mono text-xs">→ CN·001</span>
               </div>
             </div>
           </div>

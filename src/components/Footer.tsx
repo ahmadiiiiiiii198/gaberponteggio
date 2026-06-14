@@ -6,13 +6,13 @@ export const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-4 flex items-center gap-4">
-            <div className="h-16 w-16 bg-primary-foreground rounded-full flex items-center justify-center p-1.5 shrink-0">
-              <Logo markOnly className="h-full" />
+            <div className="shrink-0">
+              <Logo className="h-16 w-auto" />
             </div>
             <div>
-              <div className="font-display text-lg font-semibold">Sarda Ponteggi</div>
+              <div className="font-display text-lg font-semibold">Granda Ponteggi SRLS</div>
               <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary-foreground/60">
-                Ponteggi · Ascensori · Coperture · Materiali Edili
+                di Carta Gianluca · Noleggio · Montaggio · Smontaggio
               </div>
             </div>
           </div>
@@ -21,17 +21,18 @@ export const Footer = () => {
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-3">Sede</div>
               <div className="leading-relaxed">
-                Località S'Iscalone
+                Via Circonvallazione G. Giolitti, 24
                 <br />
-                07049 Usini (SS)
+                12030 Torre San Giorgio (CN)
               </div>
             </div>
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-3">Contatti</div>
               <div className="leading-relaxed">
-                <a href="tel:+393341922557" className="block hover:text-accent transition-colors">334 192 2557</a>
-                <a href="mailto:info@sardaponteggi.it" className="block hover:text-accent transition-colors break-all">
-                  info@sardaponteggi.it
+                <a href="tel:+393406847275" className="block hover:text-accent transition-colors">340 684 7275</a>
+                <a href="tel:+393383597518" className="block hover:text-accent transition-colors">338 359 7518</a>
+                <a href="mailto:grandaponteggi@gmail.com" className="block hover:text-accent transition-colors break-all">
+                  grandaponteggi@gmail.com
                 </a>
               </div>
             </div>
@@ -39,10 +40,10 @@ export const Footer = () => {
 
           <div className="md:col-span-3 text-right">
             <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60">
-              © {new Date().getFullYear()} Sarda Ponteggi
+              © {new Date().getFullYear()} Granda Ponteggi SRLS
             </div>
             <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/40 mt-1">
-              P.IVA · Tutti i diritti riservati
+              P.IVA 11757940017 · Tutti i diritti riservati
             </div>
           </div>
         </div>

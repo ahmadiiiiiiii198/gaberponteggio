@@ -25,8 +25,8 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#top" className="flex items-center gap-2 text-primary h-10">
-          <Logo className="h-8 md:h-10" showText />
+        <a href="#top" className="flex items-center text-primary h-12 md:h-14">
+          <Logo className="h-full w-auto" />
         </a>
 
         {/* Desktop Nav */}
@@ -40,11 +40,11 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+393341922557"
+            href="tel:+393406847275"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2.5 text-sm font-semibold hover:bg-primary-glow transition-colors"
           >
             <Phone className="h-4 w-4" />
-            <span className="hidden sm:inline font-mono-tight">334.192.25.57</span>
+            <span className="hidden sm:inline font-mono-tight">340.684.72.75</span>
             <span className="sm:hidden">Chiama</span>
           </a>
 
@@ -83,16 +83,16 @@ export const Navbar = () => {
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Sede</div>
               <div className="font-display text-xl leading-snug">
-                Località S'Iscalone
+                Via Circonvallazione G. Giolitti, 24
                 <br />
-                07049 Usini (SS)
+                12030 Torre San Giorgio (CN)
               </div>
             </div>
 
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Contatti</div>
-              <a href="tel:+393341922557" className="font-display text-2xl font-medium text-primary">
-                334 192 2557
+              <a href="tel:+393406847275" className="font-display text-2xl font-medium text-primary">
+                340 684 7275
               </a>
             </div>
           </div>

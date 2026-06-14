@@ -15,7 +15,7 @@ export const Contact = () => {
               <span className="italic font-light">senza impegno.</span>
             </h2>
             <p className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-              Sopralluogo gratuito in tutta la provincia di Sassari e nel resto della Sardegna. Risposta entro 24 ore lavorative,
+              Sopralluogo gratuito in tutta la provincia di Cuneo e nel resto del Piemonte. Risposta entro 24 ore lavorative,
               preventivo personalizzato e dettagliato.
             </p>
           </div>
@@ -24,14 +24,14 @@ export const Contact = () => {
         <div className="grid md:grid-cols-12 gap-4 md:gap-8 mt-12 md:mt-16">
           {/* Phone card */}
           <a
-            href="tel:+393341922557"
+            href="tel:+393406847275"
             className="md:col-span-5 group relative bg-primary text-primary-foreground p-6 md:p-10 overflow-hidden hover:bg-primary-glow transition-colors"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-4 md:mb-6">
-              Telefono · Sarda Ponteggi
+              Telefono · Granda Ponteggi
             </div>
             <div className="font-display text-2xl md:text-5xl font-medium tracking-tight relative z-10">
-              334 192 2557
+              340 684 7275
             </div>
             <div className="mt-4 md:mt-6 flex items-center gap-3 text-xs md:text-sm relative z-10">
               <Phone className="h-3.5 w-3.5" />
@@ -44,7 +44,7 @@ export const Contact = () => {
 
           {/* WhatsApp Support */}
           <a
-            href="https://wa.me/393341922557"
+            href="https://wa.me/393406847275"
             target="_blank"
             rel="noopener noreferrer"
             className="md:col-span-3 bg-secondary p-6 md:p-8 hover:bg-accent hover:text-accent-foreground transition-colors group"
@@ -62,7 +62,7 @@ export const Contact = () => {
 
           {/* Email */}
           <a
-            href="mailto:info@sardaponteggi.it"
+            href="mailto:grandaponteggi@gmail.com"
             className="md:col-span-4 border border-primary p-6 md:p-8 hover:bg-primary hover:text-primary-foreground transition-colors group"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-primary-foreground/70 mb-4 md:mb-6 flex items-center gap-2">
@@ -70,7 +70,7 @@ export const Contact = () => {
               Mail
             </div>
             <div className="font-display text-lg md:text-2xl font-medium tracking-tight break-all">
-              info@sardaponteggi.it
+              grandaponteggi@gmail.com
             </div>
           </a>
 
@@ -82,11 +82,11 @@ export const Contact = () => {
                 <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">
                   Sede operativa
                 </div>
-                <div className="font-display text-lg md:text-xl">Località S'Iscalone, 07049 Usini (SS)</div>
+                <div className="font-display text-lg md:text-xl">Via Circonvallazione G. Giolitti, 24 — 12030 Torre San Giorgio (CN)</div>
               </div>
             </div>
             <a
-              href="https://maps.google.com/?q=Localita+S'Iscalone+Usini+SS"
+              href="https://maps.google.com/?q=Granda+Ponteggi+Torre+San+Giorgio+CN"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold border-b border-primary pb-1 hover:gap-3 transition-all"

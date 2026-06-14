@@ -16,7 +16,7 @@ const STAGES = [
         racconta una <em className="font-light">storia</em>.
       </>
     ),
-    body: "Facciate segnate dal tempo, intonaci che si sgretolano sotto il sole di Sardegna. È da qui che cominciamo: ascoltare la pietra prima di toccarla.",
+    body: "Facciate segnate dal tempo, intonaci che si sgretolano sotto il cielo del Piemonte. È da qui che cominciamo: ascoltare la pietra prima di toccarla.",
     quote: "« Il restauro è un atto d'amore verso la città. »",
   },
   {
@@ -47,7 +47,7 @@ const STAGES = [
         a <em className="font-light">risplendere</em>.
       </>
     ),
-    body: "Smontiamo in sicurezza e lasciamo l'isola un po' più bella. Un edificio alla volta, con la cura artigiana di chi ama la propria terra.",
+    body: "Smontiamo in sicurezza e lasciamo il territorio un po' più bello. Un edificio alla volta, con la cura artigiana di chi ama la propria terra.",
     quote: "« La bellezza è una promessa di felicità. »",
   },
 ];
@@ -339,7 +339,7 @@ export const Transformation = () => {
                         {s.quote}
                       </p>
                       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary-foreground/50">
-                        — Sarda Ponteggi
+                        — Granda Ponteggi
                       </p>
                     </div>
                   </div>
