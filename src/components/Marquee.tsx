@@ -10,7 +10,7 @@ export const Marquee = () => {
     "Trasporto Carichi Pesanti",
     "Consegna in Cantiere",
     "100% Sicurezza",
-    "Cantieri in Piemonte",
+    "Cantieri in Veneto",
   ];
   return (
     <div className="bg-primary text-primary-foreground border-y border-primary-glow/30 overflow-hidden ticker-wrap">

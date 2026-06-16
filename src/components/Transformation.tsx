@@ -16,7 +16,7 @@ const STAGES = [
         racconta una <em className="font-light">storia</em>.
       </>
     ),
-    body: "Facciate segnate dal tempo, intonaci che si sgretolano sotto il cielo del Piemonte. È da qui che cominciamo: ascoltare la pietra prima di toccarla.",
+    body: "Facciate segnate dal tempo, intonaci che si sgretolano sotto il cielo del Veneto. È da qui che cominciamo: ascoltare la pietra prima di toccarla.",
     quote: "« Il restauro è un atto d'amore verso la città. »",
   },
   {
@@ -115,7 +115,7 @@ export const Transformation = () => {
         <div className="absolute inset-0">
           <img
             src={buildingOld}
-            alt="Palazzo storico torinese in stato di degrado, intonaco scrostato"
+            alt="Palazzo storico veneziano in stato di degrado, intonaco scrostato"
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
             style={{
               opacity: oldOpacity,
@@ -140,7 +140,7 @@ export const Transformation = () => {
           />
           <img
             src={buildingRenovated}
-            alt="Palazzo storico torinese restaurato, facciata ocra al tramonto"
+            alt="Palazzo storico veneziano restaurato, facciata ocra al tramonto"
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
             style={{
               opacity: newOpacity,
@@ -339,7 +339,7 @@ export const Transformation = () => {
                         {s.quote}
                       </p>
                       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary-foreground/50">
-                        — Granda Ponteggi
+                        — Italponteggi
                       </p>
                     </div>
                   </div>

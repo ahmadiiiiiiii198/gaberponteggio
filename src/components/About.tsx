@@ -22,7 +22,7 @@ export const About = () => {
 
                 {/* Vertical mono label on the left */}
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 [writing-mode:vertical-rl] rotate-180 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.4em] text-muted-foreground/80">
-                  Originale · Piemonte · IT
+                  Originale · Veneto · IT
                 </div>
 
                 {/* Coordinates / serial */}
@@ -47,14 +47,14 @@ export const About = () => {
                 {/* Bottom signature line */}
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.3em] text-primary/70">
                   <span className="w-3 h-px bg-primary/40" />
-                  <span>Granda · Ponteggi</span>
+                  <span>Italponteggi · S.r.l.</span>
                   <span className="w-3 h-px bg-primary/40" />
                 </div>
               </div>
 
               {/* Yellow stamp — pinned bottom-right */}
               <div className="absolute -bottom-2 -right-2 md:-bottom-3 md:-right-3 bg-accent text-accent-foreground px-3.5 py-1.5 md:px-4 md:py-2 font-mono text-[9px] md:text-[10px] uppercase tracking-[0.3em] shadow-lg shadow-accent/30">
-                Torre San Giorgio · Piemonte
+                Malcontenta · Veneto
               </div>
 
               {/* Top-left tag */}
@@ -74,15 +74,15 @@ export const About = () => {
               <br />
               <span className="italic font-light">una stretta di mano,</span>
               <br />
-              la forza del lavoro in Piemonte.
+              la forza del lavoro in Veneto.
             </h2>
             <div className="mt-6 md:mt-8 grid sm:grid-cols-2 gap-5 md:gap-6 text-sm text-muted-foreground leading-relaxed">
               <p>
-                Granda Ponteggi SRLS, di Carta Gianluca, nasce con un'idea semplice e solida: un ponteggio è prima di tutto fiducia e sicurezza.
+                Italponteggi S.r.l. nasce con un'idea semplice e solida: un ponteggio è prima di tutto fiducia e sicurezza.
                 Fiducia di chi ci lavora sopra ad altezze elevate, di chi ci passa sotto ogni giorno e di chi firma la commessa.
               </p>
               <p>
-                Oggi la squadra opera con orgoglio in tutta la provincia di Cuneo e in Piemonte, dalle opere di nuova costruzione
+                Oggi la squadra opera con orgoglio a Venezia e in tutto il Veneto, dalle opere di nuova costruzione
                 alla manutenzione e ristrutturazione di edifici esistenti, con la stessa promessa: puntualità, montaggio a regola d'arte
                 e sicurezza assoluta.
               </p>

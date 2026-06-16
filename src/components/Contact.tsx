@@ -15,7 +15,7 @@ export const Contact = () => {
               <span className="italic font-light">senza impegno.</span>
             </h2>
             <p className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-              Sopralluogo gratuito in tutta la provincia di Cuneo e nel resto del Piemonte. Risposta entro 24 ore lavorative,
+              Sopralluogo gratuito a Venezia e in tutto il Veneto. Risposta entro 24 ore lavorative,
               preventivo personalizzato e dettagliato.
             </p>
           </div>
@@ -24,14 +24,14 @@ export const Contact = () => {
         <div className="grid md:grid-cols-12 gap-4 md:gap-8 mt-12 md:mt-16">
           {/* Phone card */}
           <a
-            href="tel:+393406847275"
+            href="tel:+390415470791"
             className="md:col-span-5 group relative bg-primary text-primary-foreground p-6 md:p-10 overflow-hidden hover:bg-primary-glow transition-colors"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-4 md:mb-6">
-              Telefono · Granda Ponteggi
+              Telefono · Italponteggi
             </div>
             <div className="font-display text-2xl md:text-5xl font-medium tracking-tight relative z-10">
-              340 684 7275
+              041 547 0791
             </div>
             <div className="mt-4 md:mt-6 flex items-center gap-3 text-xs md:text-sm relative z-10">
               <Phone className="h-3.5 w-3.5" />
@@ -42,27 +42,27 @@ export const Contact = () => {
             <div className="absolute -bottom-20 -right-20 w-48 md:w-64 h-48 md:h-64 border border-primary-foreground/10 rounded-full" />
           </a>
 
-          {/* WhatsApp Support */}
+          {/* Website */}
           <a
-            href="https://wa.me/393406847275"
+            href="https://italmarcato.it"
             target="_blank"
             rel="noopener noreferrer"
             className="md:col-span-3 bg-secondary p-6 md:p-8 hover:bg-accent hover:text-accent-foreground transition-colors group"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-accent-foreground/70 mb-4 md:mb-6">
-              WhatsApp
+              Sito web
             </div>
             <div className="font-display text-xl md:text-3xl font-medium tracking-tight">
-              Invia Messaggio
+              italmarcato.it
             </div>
             <div className="mt-4 md:mt-6 text-[10px] md:text-xs font-mono uppercase tracking-wider opacity-70">
-              Risposta immediata
+              Scopri di più
             </div>
           </a>
 
           {/* Email */}
           <a
-            href="mailto:grandaponteggi@gmail.com"
+            href="mailto:info@italmarcato.it"
             className="md:col-span-4 border border-primary p-6 md:p-8 hover:bg-primary hover:text-primary-foreground transition-colors group"
           >
             <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground group-hover:text-primary-foreground/70 mb-4 md:mb-6 flex items-center gap-2">
@@ -70,7 +70,7 @@ export const Contact = () => {
               Mail
             </div>
             <div className="font-display text-lg md:text-2xl font-medium tracking-tight break-all">
-              grandaponteggi@gmail.com
+              info@italmarcato.it
             </div>
           </a>
 
@@ -82,11 +82,11 @@ export const Contact = () => {
                 <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">
                   Sede operativa
                 </div>
-                <div className="font-display text-lg md:text-xl">Via Circonvallazione G. Giolitti, 24 — 12030 Torre San Giorgio (CN)</div>
+                <div className="font-display text-lg md:text-xl">Via Della Fisica, 2-4 — 30176 Malcontenta (VE)</div>
               </div>
             </div>
             <a
-              href="https://maps.google.com/?q=Granda+Ponteggi+Torre+San+Giorgio+CN"
+              href="https://maps.google.com/?q=Italponteggi+Via+Della+Fisica+Malcontenta+VE"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold border-b border-primary pb-1 hover:gap-3 transition-all"
