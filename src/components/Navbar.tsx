@@ -61,28 +61,28 @@ export const Navbar = () => {
 
       {/* Mobile Nav Overlay */}
       <div
-        className={`fixed inset-0 top-16 bg-background z-40 transition-all duration-500 md:hidden ${
+        className={`fixed inset-0 top-16 bg-primary text-primary-foreground z-40 transition-all duration-500 md:hidden ${
           isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
         }`}
       >
-        <div className="absolute inset-0 blueprint-grid opacity-10" />
+        <div className="absolute inset-0 blueprint-grid opacity-20" />
         <nav className="relative container py-12 flex flex-col gap-6">
           {navLinks.map((link, i) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="font-display text-4xl font-medium tracking-tight hover:italic hover:translate-x-2 transition-all"
+              className="font-display text-4xl font-medium tracking-tight text-primary-foreground hover:text-accent hover:italic hover:translate-x-2 transition-all"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
               {link.label}
             </a>
           ))}
 
-          <div className="mt-12 pt-12 border-t border-border space-y-8">
+          <div className="mt-12 pt-12 border-t border-primary-foreground/20 space-y-8">
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Sede</div>
-              <div className="font-display text-xl leading-snug">
+              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-4">Sede</div>
+              <div className="font-display text-xl leading-snug text-primary-foreground">
                 Via Papa Giovanni XXIII, 11
                 <br />
                 40056 Valsamoggia (BO)
@@ -90,8 +90,8 @@ export const Navbar = () => {
             </div>
 
             <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Contatti</div>
-              <a href="tel:+393888891993" className="font-display text-2xl font-medium text-primary">
+              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60 mb-4">Contatti</div>
+              <a href="tel:+393888891993" className="font-display text-2xl font-medium text-accent">
                 388 889 1993
               </a>
             </div>
