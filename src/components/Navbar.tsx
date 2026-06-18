@@ -40,11 +40,11 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+390415470791"
+            href="tel:+393888891993"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2.5 text-sm font-semibold hover:bg-primary-glow transition-colors"
           >
             <Phone className="h-4 w-4" />
-            <span className="hidden sm:inline font-mono-tight">041.547.07.91</span>
+            <span className="hidden sm:inline font-mono-tight">388.889.1993</span>
             <span className="sm:hidden">Chiama</span>
           </a>
 
@@ -83,16 +83,16 @@ export const Navbar = () => {
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Sede</div>
               <div className="font-display text-xl leading-snug">
-                Via Della Fisica, 2-4
+                Via Papa Giovanni XXIII, 11
                 <br />
-                30176 Malcontenta (VE)
+                40056 Valsamoggia (BO)
               </div>
             </div>
 
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-4">Contatti</div>
-              <a href="tel:+390415470791" className="font-display text-2xl font-medium text-primary">
-                041 547 0791
+              <a href="tel:+393888891993" className="font-display text-2xl font-medium text-primary">
+                388 889 1993
               </a>
             </div>
           </div>

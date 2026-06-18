@@ -1,11 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
-  { ref: "VE·112", name: "Complesso Residenziale, Mestre", year: "2024", type: "Nuova costruzione", height: "22 m" },
-  { ref: "VE·115", name: "Edificio Storico, Venezia", year: "2024", type: "Ristrutturazione esterna", height: "15 m" },
-  { ref: "VE·118", name: "Capannone Industriale, Marghera", year: "2024", type: "Manutenzione facciata", height: "14 m" },
-  { ref: "VE·121", name: "Condominio, Mira", year: "2025", type: "Ponteggio di facciata", height: "28 m" },
-  { ref: "VE·124", name: "Palazzo Comunale, Dolo", year: "2025", type: "Restauro conservativo", height: "26 m" },
+  { ref: "BO·112", name: "Complesso Residenziale, Bologna", year: "2024", type: "Nuova costruzione", height: "22 m" },
+  { ref: "BO·115", name: "Edificio Storico, Bazzano", year: "2024", type: "Ristrutturazione esterna", height: "15 m" },
+  { ref: "BO·118", name: "Capannone Industriale, Crespellano", year: "2024", type: "Manutenzione facciata", height: "14 m" },
+  { ref: "BO·121", name: "Condominio, Casalecchio di Reno", year: "2025", type: "Ponteggio di facciata", height: "28 m" },
+  { ref: "BO·124", name: "Palazzo Comunale, Zola Predosa", year: "2025", type: "Restauro conservativo", height: "26 m" },
 ];
 
 export const Projects = () => {
@@ -20,7 +20,7 @@ export const Projects = () => {
             <h2 className="font-display text-balance text-5xl md:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
               Cantieri recenti
               <br />
-              <span className="italic font-light">in tutto il Veneto.</span>
+              <span className="italic font-light">in tutta l'Emilia-Romagna.</span>
             </h2>
           </div>
         </div>

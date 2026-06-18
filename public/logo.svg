@@ -11,8 +11,8 @@
   <circle cx="200" cy="200" r="170" stroke="#122149" stroke-width="2.5" fill="none"/>
 
   <!-- Curved wordmark -->
-  <text font-family="'Inter','Helvetica',sans-serif" font-weight="800" font-size="38" letter-spacing="3" fill="#122149">
-    <textPath href="#ip-topArc" startOffset="50%" text-anchor="middle">ITALPONTEGGI</textPath>
+  <text font-family="'Inter','Helvetica',sans-serif" font-weight="800" font-size="32" letter-spacing="1.5" fill="#122149">
+    <textPath href="#ip-topArc" startOffset="50%" text-anchor="middle">GABER PONTEGGI</textPath>
   </text>
   <text font-family="'Inter','Helvetica',sans-serif" font-weight="700" font-size="21" letter-spacing="6" fill="#122149">
     <textPath href="#ip-botArc" startOffset="50%" text-anchor="middle">NOLEGGIO · MONTAGGIO</textPath>
@@ -37,10 +37,7 @@
     <line x1="158" y1="227" x2="242" y2="280"/>
   </g>
 
-  <!-- Bold "I" monogram -->
-  <g fill="#f6a91d">
-    <rect x="190" y="120" width="20" height="160" rx="3"/>
-    <rect x="168" y="120" width="64" height="18" rx="3"/>
-    <rect x="168" y="262" width="64" height="18" rx="3"/>
-  </g>
+  <!-- Bold "G" monogram -->
+  <text x="200" y="200" text-anchor="middle" dominant-baseline="central"
+        font-family="'Inter','Helvetica',sans-serif" font-weight="800" font-size="150" fill="#f6a91d">G</text>
 </svg>

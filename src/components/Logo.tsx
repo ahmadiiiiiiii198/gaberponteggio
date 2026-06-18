@@ -9,7 +9,7 @@ interface LogoProps {
 }
 
 /**
- * Italponteggi S.r.l. — official brand mark.
+ * Gaber Ponteggi S.r.l. — official brand mark.
  * Rendered inline as SVG so it inherits the surrounding text color via
  * `currentColor` (navy on light, white on the navy footer, etc.).
  * Control the size via `className` (e.g. "h-12 w-auto" or "w-full h-auto").
@@ -20,7 +20,7 @@ export const Logo = ({ className }: LogoProps) => {
       viewBox="0 0 400 400"
       fill="none"
       role="img"
-      aria-label="Italponteggi S.r.l."
+      aria-label="Gaber Ponteggi S.r.l."
       className={cn("object-contain select-none", className)}
     >
       <defs>
@@ -33,9 +33,9 @@ export const Logo = ({ className }: LogoProps) => {
       <circle cx="200" cy="200" r="172" stroke="currentColor" strokeWidth="2.5" fill="none" />
 
       {/* Curved wordmark */}
-      <text fontFamily="'Inter','Helvetica',sans-serif" fontWeight="800" fontSize="40" letterSpacing="3" fill="currentColor">
+      <text fontFamily="'Inter','Helvetica',sans-serif" fontWeight="800" fontSize="33" letterSpacing="1.5" fill="currentColor">
         <textPath href="#ip-topArc" startOffset="50%" textAnchor="middle">
-          ITALPONTEGGI
+          GABER PONTEGGI
         </textPath>
       </text>
       <text fontFamily="'Inter','Helvetica',sans-serif" fontWeight="700" fontSize="22" letterSpacing="6" fill="currentColor">
@@ -65,12 +65,19 @@ export const Logo = ({ className }: LogoProps) => {
         <line x1="158" y1="227" x2="242" y2="280" />
       </g>
 
-      {/* Bold "I" monogram standing in the tower */}
-      <g fill="currentColor">
-        <rect x="190" y="120" width="20" height="160" rx="3" />
-        <rect x="168" y="120" width="64" height="18" rx="3" />
-        <rect x="168" y="262" width="64" height="18" rx="3" />
-      </g>
+      {/* Bold "G" monogram standing in the tower */}
+      <text
+        x="200"
+        y="200"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="'Inter','Helvetica',sans-serif"
+        fontWeight="800"
+        fontSize="150"
+        fill="currentColor"
+      >
+        G
+      </text>
     </svg>
   );
 };
